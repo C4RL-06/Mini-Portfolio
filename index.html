@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style type="text/css">
+		@media screen and (max-width: 750px) {
+            #aboutMe {
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+		}
+    </style>
+</head>
+<body id="bodyy">
+    <div id="statusContainer">
+        <h2 id="status"></h2>
+    </div>
+
+    <nav id="nav">
+        <img src="assets/moonIcon.png" id="moonIcon" class="navThemeSwitchIcon" alt="Moon icon, click for theme change."> 
+        <img src="assets/sunIcon.png" id="sunIcon" class="hidden navThemeSwitchIcon" alt="Sun icon, click for theme change.">
+        
+        <div class="pages">
+            <a href="#aboutMe">About Me</a>
+            <a href="#myProjects">My Projects</a>
+        </div>
+    </nav>
+
+    <article id="aboutMe">
+        <div style="margin: auto;" id="catIMG">
+            <img src="assets/cat.webp" alt="Distinguished cat">
+        </div>
+
+        <div id="aboutMeText">
+            <h1>About Me</h1>
+            <p>My name is Carl Axelson, and I’m from Mörarp, a small town in Sweden. I currently attend NTI Gymnasium in Helsingborg, where I’m fully immersed in my studies. I’m passionate about learning and constantly strive to excel in everything I do, which is why people often describe me as a “tryhard.” I take that as a compliment because it reflects my effort to achieving the best results I can in school.</p>
+            <p>I choose this school mainly because it was the best one for learning about programming not too far from home. Great teachers, classmates and lessons have made my interest in everything digital grow even further. This growth in interest is pushing me to set even larger goals and to learn so much more. My goal is to one day be a great all around full-stack developer!</p>
+        </div>    
+    </article>
+    
+    <hr>
+    
+    <h2 style="text-align: center;" id="myProjects">My Projects</h2>
+</body>
+<script src="main.js"></script>
+</html>
